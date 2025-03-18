@@ -1,0 +1,114 @@
+<components xmlns="http://openconfig.net/yang/platform"
+            xmlns:oc-platform-types="http://openconfig.net/yang/platform-types">
+    <!-- Amplifier Component -->
+    <component>
+        <name>Amplifier1</name>
+        <config>
+            <name>Amplifier1</name>
+            <type>oc-platform-types:COMPONENT_TYPE_AMPLIFIER</type>
+            <description>Optical Signal Amplifier</description>
+            <enabled>true</enabled>
+            <parent>Shelf1</parent>
+        </config>
+
+        <!-- Shelf Information -->
+        <subcomponents>
+            <subcomponent>
+                <name>Shelf1</name>
+                <config>
+                    <name>Shelf1</name>
+                    <description>Amplifier Shelf</description>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Card Slot Information -->
+        <subcomponents>
+            <subcomponent>
+                <name>CardSlot1</name>
+                <config>
+                    <name>CardSlot1</name>
+                    <description>Amplifier Card Slot</description>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Ports -->
+        <subcomponents>
+            <subcomponent>
+                <name>SIN_IN</name>
+                <config>
+                    <name>SIN_IN</name>
+                    <description>Signal Input Port</description>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_OUT</name>
+                <config>
+                    <name>SIN_OUT</name>
+                    <description>Signal Output Port</description>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_IN</name>
+                <config>
+                    <name>LINE_IN</name>
+                    <description>Line Input Port</description>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_OUT</name>
+                <config>
+                    <name>LINE_OUT</name>
+                    <description>Line Output Port</description>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Properties -->
+        <properties>
+            <property>
+                <name>gain</name>
+                <config>
+                    <name>gain</name>
+                    <value>20dB</value>
+                </config>
+            </property>
+            <property>
+                <name>power-level</name>
+                <config>
+                    <name>power-level</name>
+                    <value>-5dBm</value>
+                </config>
+            </property>
+            <property>
+                <name>temperature</name>
+                <config>
+                    <name>temperature</name>
+                    <value>40C</value>
+                </config>
+            </property>
+            <property>
+                <name>status</name>
+                <config>
+                    <name>status</name>
+                    <value>ACTIVE</value>
+                </config>
+            </property>
+            <property>
+                <name>input-power</name>
+                <config>
+                    <name>input-power</name>
+                    <value>-8dBm</value>
+                </config>
+            </property>
+            <property>
+                <name>output-power</name>
+                <config>
+                    <name>output-power</name>
+                    <value>-3dBm</value>
+                </config>
+            </property>
+        </properties>
+    </component>
+</components>
