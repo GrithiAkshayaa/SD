@@ -1,0 +1,124 @@
+<components xmlns="http://openconfig.net/yang/platform">
+    <!-- Amplifier Component -->
+    <component>
+        <name>Amplifier1</name>
+        <config>
+            <name>Amplifier1</name>
+            <description>Optical Signal Amplifier</description>
+            <!-- Client Details -->
+            <client-name>XYZ Telecom</client-name>
+            <client-no>123456789</client-no>
+            <!-- Manufacturer Details -->
+            <mfg-name>Wipro Limited</mfg-name>
+            <mfg-date>2023-05-15</mfg-date>
+            <part-no>AMP5000-PART</part-no>
+            <!-- Object Properties -->
+            <object-type>AMPLIFIER</object-type>
+            <admin-state>ENABLED</admin-state>
+            <slot>Slot1</slot>
+            <power-supply>48V DC</power-supply>
+            <parent>Shelf1</parent>
+        </config>
+
+        <!-- Shelf Information -->
+        <subcomponents>
+            <subcomponent>
+                <name>Shelf1</name>
+                <config>
+                    <name>Shelf1</name>
+                    <description>Amplifier Shelf</description>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Card Slot Information -->
+        <subcomponents>
+            <subcomponent>
+                <name>CardSlot1</name>
+                <config>
+                    <name>CardSlot1</name>
+                    <description>Amplifier Card Slot</description>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Ports -->
+        <subcomponents>
+            <subcomponent>
+                <name>SIN_IN</name>
+                <config>
+                    <name>SIN_IN</name>
+                    <description>Signal Input Port</description>
+                    <port-type>OPTICAL</port-type>
+                    <port-role>INPUT</port-role>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_OUT</name>
+                <config>
+                    <name>SIN_OUT</name>
+                    <description>Signal Output Port</description>
+                    <port-type>OPTICAL</port-type>
+                    <port-role>OUTPUT</port-role>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_IN</name>
+                <config>
+                    <name>LINE_IN</name>
+                    <description>Line Input Port</description>
+                    <port-type>ELECTRICAL</port-type>
+                    <port-role>INPUT</port-role>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_OUT</name>
+                <config>
+                    <name>LINE_OUT</name>
+                    <description>Line Output Port</description>
+                    <port-type>ELECTRICAL</port-type>
+                    <port-role>OUTPUT</port-role>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Amplifier Properties -->
+        <properties>
+            <property>
+                <name>gain</name>
+                <config>
+                    <name>gain</name>
+                    <value>20dB</value>
+                </config>
+            </property>
+            <property>
+                <name>power-level</name>
+                <config>
+                    <name>power-level</name>
+                    <value>-5dBm</value>
+                </config>
+            </property>
+            <property>
+                <name>temperature</name>
+                <config>
+                    <name>temperature</name>
+                    <value>40C</value>
+                </config>
+            </property>
+            <property>
+                <name>input-power</name>
+                <config>
+                    <name>input-power</name>
+                    <value>-8dBm</value>
+                </config>
+            </property>
+            <property>
+                <name>output-power</name>
+                <config>
+                    <name>output-power</name>
+                    <value>-3dBm</value>
+                </config>
+            </property>
+        </properties>
+    </component>
+</components>
