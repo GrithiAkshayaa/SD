@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns="http://openconfig.net/yang/platform">
+    <!-- Define Top-Level Components -->
+    <component>
+        <name>Amplifier1</name>
+        <config>
+            <name>Amplifier1</name>
+        </config>
+    </component>
+
+    <component>
+        <name>Shelf1</name>
+        <config>
+            <name>Shelf1</name>
+        </config>
+    </component>
+
+    <component>
+        <name>Slot1</name>
+        <config>
+            <name>Slot1</name>
+        </config>
+    </component>
+
+    <component>
+        <name>Card1</name>
+        <config>
+            <name>Card1</name>
+        </config>
+    </component>
+
+    <component>
+        <name>SIN_IN</name>
+        <config>
+            <name>SIN_IN</name>
+        </config>
+    </component>
+
+    <component>
+        <name>SIN_OUT</name>
+        <config>
+            <name>SIN_OUT</name> <!-- Typo fixed -->
+        </config>
+    </component>
+
+    <component>
+        <name>LINE_IN</name>
+        <config>
+            <name>LINE_IN</name>
+        </config>
+    </component>
+
+    <component>
+        <name>LINE_OUT</name>
+        <config>
+            <name>LINE_OUT</name>
+        </config>
+    </component>
+
+    <!-- Link Subcomponents to Amplifier1 -->
+    <component>
+        <name>Amplifier1</name>
+        <subcomponents>
+            <subcomponent>
+                <name>Shelf1</name>
+            </subcomponent>
+            <subcomponent>
+                <name>Slot1</name>
+            </subcomponent>
+            <subcomponent>
+                <name>Card1</name>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_IN</name>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_OUT</name> <!-- Reference matches top-level name -->
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_IN</name>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_OUT</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+</components>
