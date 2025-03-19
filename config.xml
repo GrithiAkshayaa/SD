@@ -1,0 +1,17 @@
+<components>
+    <component>
+        <name>Chassis1</name>
+        <config>
+            <description>Main Chassis</description>
+            <type>CHASSIS</type>
+        </config>
+    </component>
+
+    <component>
+        <name>Linecard0</name>
+        <config>
+            <description>First Line Card</description>
+            <type>LINECARD</type>
+        </config>
+    </component>
+</components>
