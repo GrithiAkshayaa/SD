@@ -1,0 +1,91 @@
+<components xmlns="http://openconfig.net/yang/platform">
+    <!-- Amplifier Component -->
+    <component>
+        <name>Amplifier1</name>
+        <config>
+            <name>Amplifier1</name>
+        </config>
+        <subcomponents>
+            <subcomponent>
+                <name>Shelf1</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <!-- Shelf Component -->
+    <component>
+        <name>Shelf1</name>
+        <config>
+            <name>Shelf1</name>
+        </config>
+        <subcomponents>
+            <subcomponent>
+                <name>Slot1</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <!-- Slot Component -->
+    <component>
+        <name>Slot1</name>
+        <config>
+            <name>Slot1</name>
+        </config>
+        <subcomponents>
+            <subcomponent>
+                <name>Card1</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <!-- Card Component -->
+    <component>
+        <name>Card1</name>
+        <config>
+            <name>Card1</name>
+        </config>
+        <subcomponents>
+            <subcomponent>
+                <name>SIN_IN</name>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_OUT</name>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_IN</name>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_OUT</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <!-- Ports -->
+    <component>
+        <name>SIN_IN</name>
+        <config>
+            <name>SIN_IN</name>
+        </config>
+    </component>
+
+    <component>
+        <name>SIN_OUT</name>
+        <config>
+            <name>SIN_OUT</name>
+        </config>
+    </component>
+
+    <component>
+        <name>LINE_IN</name>
+        <config>
+            <name>LINE_IN</name>
+        </config>
+    </component>
+
+    <component>
+        <name>LINE_OUT</name>
+        <config>
+            <name>LINE_OUT</name>
+        </config>
+    </component>
+</components>
