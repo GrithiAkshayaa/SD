@@ -1,0 +1,66 @@
+<components xmlns="http://openconfig.net/yang/platform">
+    <component>
+        <name>Amplifier1</name>
+        <config>
+            <name>Amplifier1</name>
+        </config>
+
+        <!-- Shelf -->
+        <subcomponents>
+            <subcomponent>
+                <name>Shelf1</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <component>
+        <name>Shelf1</name>
+        <config>
+            <name>Shelf1</name>
+        </config>
+
+        <!-- Slot -->
+        <subcomponents>
+            <subcomponent>
+                <name>Slot1</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <component>
+        <name>Slot1</name>
+        <config>
+            <name>Slot1</name>
+        </config>
+
+        <!-- Card -->
+        <subcomponents>
+            <subcomponent>
+                <name>Card1</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+
+    <component>
+        <name>Card1</name>
+        <config>
+            <name>Card1</name>
+        </config>
+
+        <!-- Ports -->
+        <subcomponents>
+            <subcomponent>
+                <name>SIN_IN</name>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_OUT</name>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_IN</name>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_OUT</name>
+            </subcomponent>
+        </subcomponents>
+    </component>
+</components>
