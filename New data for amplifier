@@ -1,0 +1,89 @@
+<components xmlns="http://openconfig.net/yang/platform">
+    <!-- Amplifier Component -->
+    <component>
+        <name>Amplifier1</name>
+        <config>
+            <name>Amplifier1</name>
+        </config>
+
+        <!-- Shelf -->
+        <subcomponents>
+            <subcomponent>
+                <name>Shelf1</name>
+                <config>
+                    <name>Shelf1</name>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Slot -->
+        <subcomponents>
+            <subcomponent>
+                <name>Slot1</name>
+                <config>
+                    <name>Slot1</name>
+                    <parent>Shelf1</parent>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Card -->
+        <subcomponents>
+            <subcomponent>
+                <name>Card1</name>
+                <config>
+                    <name>Card1</name>
+                    <parent>Slot1</parent>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Ports -->
+        <subcomponents>
+            <subcomponent>
+                <name>SIN_IN</name>
+                <config>
+                    <name>SIN_IN</name>
+                    <parent>Card1</parent>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>SIN_OUT</name>
+                <config>
+                    <name>SIN_OUT</name>
+                    <parent>Card1</parent>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_IN</name>
+                <config>
+                    <name>LINE_IN</name>
+                    <parent>Card1</parent>
+                </config>
+            </subcomponent>
+            <subcomponent>
+                <name>LINE_OUT</name>
+                <config>
+                    <name>LINE_OUT</name>
+                    <parent>Card1</parent>
+                </config>
+            </subcomponent>
+        </subcomponents>
+
+        <!-- Properties -->
+        <properties>
+            <property>
+                <name>gain</name>
+                <config>
+                    <name>gain</name>
+                </config>
+            </property>
+            <property>
+                <name>power-level</name>
+                <config>
+                    <name>power-level</name>
+                </config>
+            </property>
+        </properties>
+    </component>
+</components>
