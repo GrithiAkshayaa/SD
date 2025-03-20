@@ -1,0 +1,24 @@
+{
+    "components": [
+        {
+            "name": "component1",
+            "config": {
+                "parameter1": "value1",
+                "parameter2": "value2"
+            },
+            "state": {
+                "state_param1": "state_value1"
+            }
+        },
+        {
+            "name": "component2",
+            "config": {
+                "parameterA": "valueA",
+                "parameterB": "valueB"
+            },
+            "state": {
+                "state_paramA": "state_valueA"
+            }
+        }
+    ]
+}
